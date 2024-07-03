@@ -13,9 +13,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  build: {
-    transpile: ["vue3-colorpicker"]
-  },
   alias: process.env.FOXY_DEV_MODE === 'true' ? {
     "@foxyimg/vue-ui": require.resolve(join(currentDir, './node_modules/@foxyimg/vue-ui/src')),
     "@foxyimg/url-builder": require.resolve(join(currentDir, './node_modules/@foxyimg/url-builder/src')),
